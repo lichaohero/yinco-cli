@@ -1,0 +1,45 @@
+#timer {
+    background-color: rgba(0,0,0,1);
+    width: 240px;
+    height: 180px;
+}
+
+#time {
+    width: 100%;
+    height: 100px;
+}
+
+#hour, #minute, #second {
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+}
+
+#hour {
+    left: 20px;
+}
+
+#minute {
+    left: 90px;
+}
+
+#second {
+    left: 160px;
+}
+
+#sors {
+    top:120px ;
+    background-color: darkorange;
+    position: absolute;
+    left: 90px;
+    width: 60px;
+    color:white;
+    font-size: 20px;
+}
