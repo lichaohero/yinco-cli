@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>YinCo注册页面</title>
+    <link rel="shortcut icon " href="">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css">
+    <script src="../static/js/jquery.min.js"></script>
+    <style type="text/css">
+        body {background-color:white !important;}
+        p {overflow-wrap: break-word; word-wrap: break-word;}
+        .container {margin-left: 1000px; max-width: 600px;border:1px solid rgb(220, 220, 220) ;margin-top: 100px;background-color: white;}
+        .register-form {margin-bottom: 50px;margin-top:100px;}
+        .register-form label{vertical-align:middle;display:inline-block;}
+        .register-form input{margin-left: 5px;vertical-align:middle;display:inline-block;}
+        header {margin: 50px 0 40px 0;}
+        header h1 {font-size: 60px; font-weight: bold;color: royalblue;}
+        #submit-regist-btn{width: 200px;margin-top: 30px;margin-bottom: 100px;}
+        .input-text{width: 250px;}
+        a{margin-left: 10px;}
+        header a {text-decoration: none !important;}
+        .checkbox{padding-left: 150px;}
+        footer {margin: 20px;}
+        #bgimg{
+            position:fixed;
+            top: 0;
+            left: 0;
+            width:100%;
+            height:100%;
+            min-width: 1000px;
+            z-index:-10;
+            zoom: 1;
+            background-color: #fff;
+            background: url(../imgs/loginbg.jpg) no-repeat;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -o-background-size: cover;
+            background-position: center 0;
+            }
+        #slogan{
+            margin-top: 150px;
+            margin-left: 200px;
+            float: left;
+            font-size: 30px;
+            color:white;
+            width: 600px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="bgimg"></div>
+    <div id="slogan"></div>
+    <div class="container">
+        <header><h1 class="text-center">YinCo Blog</h1></header>
+        <div class="register-form text-center">
+            <div><label>账　号:</label><input type="text" id="login_user" class="input-text form-control"></div>
+            <br>        
+            <div><label>新密码:</label><input type="text" id="login_pwd" class="input-text form-control"></div>
+            <br>
+            <div><label>邮　箱:</label><input type="text" id="login_pwd" class="input-text form-control"></div>
+            <br>
+            <div><label>手机号:</label><input type="text" id="login_pwd" class="input-text form-control"></div>          
+        </div>
+        <div class="text-center"><button id="submit-regist-btn" type="button" class="btn btn-primary">提交注册信息</button></div>
+
+    <script>
+       $(function(){ 
+            var bodyBgs = [];
+            bodyBgs[0] = "Python虐我千百遍，我待Python如初恋";
+            bodyBgs[1] = "Any fool can write code that a computer can understand. Good programmers write code that humans can understand";
+            bodyBgs[2] = "Talk is cheap. Show me the code.";
+            bodyBgs[3] = "First, solve the problem. Then, write the code. ";
+            bodyBgs[4] = "程序员最烦两件事，第一件事是别人要他给自己的代码写文档，第二件呢？是别人的程序没有留下文档。";
+            bodyBgs[5] = "女友对程序员说：“紫禁城占得地方好大呀！”程序员：“杀死那个子进程？";
+            bodyBgs[6] = "没有情调，不懂浪漫，也许这是程序员的一面，但拥有朴实无华的爱是他们的另一面。";
+            bodyBgs[7] = "一个100行的代码调试都可能会让程序员遇到很多挫折，所以，面对挫折，我们永远不能低头。";
+            bodyBgs[8] = "栈和队列的区别是啥？吃多了拉就是队列，吃多了吐就是栈。";
+            bodyBgs[9] = "诸葛亮是一个优秀的程序员，每一个锦囊都是应对不同的case而编写的！但是优秀的程序员也敌不过更优秀的bug！六出祈山，七进中原，鞠躬尽瘁，死而后已的诸葛亮只因为有一个错误的case-马谡，整个结构就被break了！";
+            var randomBgIndex = Math.round( Math.random() * 10 );
+           $('#slogan').html(bodyBgs[randomBgIndex])
+       })
+    </script>
+
+</body>
+</html>
